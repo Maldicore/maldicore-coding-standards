@@ -85,18 +85,18 @@ Alternatively, can use http://modernizr.com/
 
 To calculated Specificity count the CSS components and expressing them in a form (a,b,c,d).
 
-	+ Element, Pseudo Element: d = 1 – (0,0,0,1)
-	+ Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
-	+ Id: b = 1 – (0,1,0,0)
-	+ Inline Style: a = 1 – (1,0,0,0)
+ + Element, Pseudo Element: d = 1 – (0,0,0,1)
+ + Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
+ + Id: b = 1 – (0,1,0,0)
+ + Inline Style: a = 1 – (1,0,0,0)
 
 - Always use CSS shorthand, note the TRBL acronym, element are defined, in a clock-wise manner: Top, Right, Bottom, Left. If bottom is undefined, it inherits its value from top, if left is undefined, it inherits its value from right. If only the top value is defined, all sides inherit from that one declaration.
 
 For more info on CSS shorthand usage visit the following links
 
-	+ http://qrayg.com/journal/news/css-background-shorthand
-	+ http://sonspring.com/journal/css-redundancy
-	+ http://dustindiaz.com/css-shorthand
+ + http://qrayg.com/journal/news/css-background-shorthand
+ + http://sonspring.com/journal/css-redundancy
+ + http://dustindiaz.com/css-shorthand
 
 - Use the _px_ unit of measurement to define font size, instead of _em_ because it offers absolute control over text.
 
@@ -106,11 +106,11 @@ For more info on CSS shorthand usage visit the following links
 
 - For mission critical app/site test performance using:
 
-	+ http://developer.yahoo.com/yslow/
-	+ http://code.google.com/speed/page-speed/
-	+ http://stevesouders.com/hammerhead/
-	+ http://msfast.myspace.com/
-	+ http://www.webpagetest.org/
+ + http://developer.yahoo.com/yslow/
+ + http://code.google.com/speed/page-speed/
+ + http://stevesouders.com/hammerhead/
+ + http://msfast.myspace.com/
+ + http://www.webpagetest.org/
 
 # Javascript Syntax
 
