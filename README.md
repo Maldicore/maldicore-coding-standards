@@ -12,11 +12,11 @@ Indentation rules should be applied in the source file that will be edited by ot
 
 # HTML Standards
 
-* As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. 
+- As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. 
 
-* When multiple browser compatibility is necessity use http://caniuse.com/.
+- When multiple browser compatibility is necessity use http://caniuse.com/.
 
-* To enable HTML5 on older versions of IE use the following code.
+- To enable HTML5 on older versions of IE use the following code.
 
 ```html
 <!--[if lt IE 9]>
