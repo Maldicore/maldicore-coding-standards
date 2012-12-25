@@ -1,0 +1,15 @@
+<snippet>
+<content>
+<![CDATA[
+    /**
+     * ${1:Variable Name}
+     * ${2:Description}.
+     * 
+     * @var ${3:Variable Type}
+     */
+    ${4:# code}
+]]>
+</content>
+<tabTrigger>maldicorevarheader</tabTrigger>
+<description>Variable header</description>
+</snippet>

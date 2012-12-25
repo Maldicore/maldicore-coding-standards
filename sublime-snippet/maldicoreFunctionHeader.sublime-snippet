@@ -1,0 +1,18 @@
+<snippet>
+<content>
+<![CDATA[
+    /**
+     * ${1:Function Name} for ${2:Class Name}.
+     *
+     * ${3:Function Description}
+     *
+     * @param ${4:Name} ${5:Type}
+     * @return ${6: Return type}
+     *
+     */
+    ${7:# code}
+]]>
+</content>
+<tabTrigger>maldicorefunctionheader</tabTrigger>
+<description>Function/Action/Method header</description>
+</snippet>

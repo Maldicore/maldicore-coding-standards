@@ -1,0 +1,16 @@
+<snippet>
+<content>
+<![CDATA[
+    /**
+     * ${1:Classname}: ${2:Description}.
+     *
+     * @package ${3:Name}
+     * @subpackage ${4:Name in dot notation}
+     *
+     */
+    ${5:# code}
+]]>
+</content>
+<tabTrigger>maldicoreclassheader</tabTrigger>
+<description>Class header</description>
+</snippet>
