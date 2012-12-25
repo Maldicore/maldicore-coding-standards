@@ -94,6 +94,10 @@ Alternatively, can use http://modernizr.com/
 
 See PHP Syntax Below. The languages are similar enough that the same rules apply in most cases.
 
+# Javascript Styling
+
+Use Airbnb JavaScript Style Guide [https://github.com/Maldicore/javascript]
+
 # Request Vars
 
 Although our php setup have register_globals enabled, PHP6 will remove this option. Therefore, in new code, we should always use the super globals $_GET, $_POST, and $_COOKIE. $_REQUEST should be used only when it is known for sure that a variable could be supplied using multiple methods.
@@ -113,7 +117,6 @@ Example PHP/HTML Mix
         <li><?php echo $pub["name"]?></li>
     <?php } ?>
 </ul>
-
 ```
 
 ## Control Structures
@@ -151,7 +154,6 @@ switch (condition) {
         defaultaction;
         break;
 }
-
 ```
 
 ## Function Calls
