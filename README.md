@@ -26,21 +26,21 @@ Indentation rules should be applied in the source file that will be edited by ot
 
 Alternatively, can use http://modernizr.com/
 
-* The DocType on our HTML documents will be HTML5 based <!DOCTYPE html>.This standard should be followed unless we have to comply with other standards for specific purposed, eg: HTML 4.
+- The DocType on our HTML documents will be HTML5 based <!DOCTYPE html>.This standard should be followed unless we have to comply with other standards for specific purposed, eg: HTML 4.
 
-* All markup should be delivered as UTF-8, as its the most internationalization friendly.
+- All markup should be delivered as UTF-8, as its the most internationalization friendly.
 
 ```html
 <meta charset="utf-8">
 ```
 
-* Always add a lang attribute on html element, e.g.: <html lang=”en”>
+- Always add a lang attribute on html element, e.g.: <html lang=”en”>
 
-* Write all HTML5 tags in lowercase.
+- Write all HTML5 tags in lowercase.
 
-* Use double quotes for attribute value eg: charset="utf-8".
+- Use double quotes for attribute value eg: charset="utf-8".
 
-* Start with a base HTML5 template code generated use http://switchtohtml5.com/ or http://shikiryu.com/html5/. Alternatively for quick start use http://html5boilerplate.com/
+- Start with a base HTML5 template code generated use http://switchtohtml5.com/ or http://shikiryu.com/html5/. Alternatively for quick start use http://html5boilerplate.com/
 
 * A basic, but semantically correct HTML5 document should look like the following:
 
@@ -67,50 +67,50 @@ Alternatively, can use http://modernizr.com/
 </html>
 ```
 
-* Place an html comment on some closing div tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
+- Place an html comment on some closing div tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
 
-* Use microformats[[http://en.wikipedia.org/wiki/Microformat]] and/or Microdata where appropriate, specifically hCard and adr.
+- Use microformats[[http://en.wikipedia.org/wiki/Microformat]] and/or Microdata where appropriate, specifically hCard and adr.
 
-* Make use of THEAD, TBODY, and TH tags in tables (and Scope attribute) when appropriate.
+- Make use of THEAD, TBODY, and TH tags in tables (and Scope attribute) when appropriate.
 
 # Styling/CSS Standards
 
-* Place all the styling on a separate stylesheet, never use inline styling unless necessary,
+- Place all the styling on a separate stylesheet, never use inline styling unless necessary,
 
-* Only give elements an ID attribute if they are unique. They should be applied to that element only and nothing else. Classes can be applied to multiple elements that share the same style properties. Things that should look and work in the same way can have the same class name.
+- Only give elements an ID attribute if they are unique. They should be applied to that element only and nothing else. Classes can be applied to multiple elements that share the same style properties. Things that should look and work in the same way can have the same class name.
 
-* Always use spirit for background images, use http://spriteme.org/ (though this requires the codes to be online)
+- Always use spirit for background images, use http://spriteme.org/ (though this requires the codes to be online)
 
-* As the CSS grow give special attention to CSS Specifity: [[http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html]]
+- As the CSS grow give special attention to CSS Specifity: [[http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html]]
 
 To calculated Specificity count the CSS components and expressing them in a form (a,b,c,d).
 
-** Element, Pseudo Element: d = 1 – (0,0,0,1)
-** Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
-** Id: b = 1 – (0,1,0,0)
-** Inline Style: a = 1 – (1,0,0,0)
++ Element, Pseudo Element: d = 1 – (0,0,0,1)
++ Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
++ Id: b = 1 – (0,1,0,0)
++ Inline Style: a = 1 – (1,0,0,0)
 
-* Always use CSS shorthand, note the TRBL acronym, element are defined, in a clock-wise manner: Top, Right, Bottom, Left. If bottom is undefined, it inherits its value from top, if left is undefined, it inherits its value from right. If only the top value is defined, all sides inherit from that one declaration.
+- Always use CSS shorthand, note the TRBL acronym, element are defined, in a clock-wise manner: Top, Right, Bottom, Left. If bottom is undefined, it inherits its value from top, if left is undefined, it inherits its value from right. If only the top value is defined, all sides inherit from that one declaration.
 
 For more info on CSS shorthand usage visit the following links
 
-** http://qrayg.com/journal/news/css-background-shorthand
-** http://sonspring.com/journal/css-redundancy
-** http://dustindiaz.com/css-shorthand
++ http://qrayg.com/journal/news/css-background-shorthand
++ http://sonspring.com/journal/css-redundancy
++ http://dustindiaz.com/css-shorthand
 
-* Use the _px_ unit of measurement to define font size, instead of _em_ because it offers absolute control over text.
+- Use the _px_ unit of measurement to define font size, instead of _em_ because it offers absolute control over text.
 
-* Avoid using !important if possible (as it mess up CSS specificity) and only use it as a last resort.
+- Avoid using !important if possible (as it mess up CSS specificity) and only use it as a last resort.
 
-* When CSS minification is in need use https://github.com/barryvan/CSSMin/
+- When CSS minification is in need use https://github.com/barryvan/CSSMin/
 
-* For mission critical app/site test performance using:
+- For mission critical app/site test performance using:
 
-** http://developer.yahoo.com/yslow/
-** http://code.google.com/speed/page-speed/
-** http://stevesouders.com/hammerhead/
-** http://msfast.myspace.com/
-** http://www.webpagetest.org/
++ http://developer.yahoo.com/yslow/
++ http://code.google.com/speed/page-speed/
++ http://stevesouders.com/hammerhead/
++ http://msfast.myspace.com/
++ http://www.webpagetest.org/
 
 # Javascript Syntax
 
