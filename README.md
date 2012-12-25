@@ -1,25 +1,23 @@
-IDE
-===
+# IDE
 
 We shall use Sublime Text 2 (ST2) licensed version for all our coding, including customization specified in this document and elsewhere in the Maldicore knowledge-base.
 
-Indenting and Line Length
--------------------------
+# Indenting and Line Length
 
 Use an indent of one tab (no spaces! ST2 convert a tab to pseudo 4 spaces, check the setting in ST2 file at Preferences->Setting - Default->"tab_size" = 4). It is recommended that you break lines at approximately 80 characters. For a visual guide for this in ST preferences file set "rulers":[80]. However there is no particular standard rule for the best way to break a line; use your judgement. This applies to all file types: PHP, HTML, CSS, Javascript, etc.
 
 Indentation rules should be applied in the source file that will be edited by others. The visual appeal of HTML output should not be taken into consideration when writing code that generates HTML.
 
-h1. HTML Standards
+# HTML Standards
 
 * As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. When multiple browser compatibility is necessity use http://caniuse.com/.
 
 * To enable HTML5 on older versions of IE use the following code.
-<pre>
+```html
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-</pre>
+```
 
 Alternatively, can use http://modernizr.com/
 
@@ -66,7 +64,7 @@ Alternatively, can use http://modernizr.com/
 
 * Make use of THEAD, TBODY, and TH tags in tables (and Scope attribute) when appropriate.
 
-h1. Styling/CSS Standards
+# Styling/CSS Standards
 
 * Place all the styling on a separate stylesheet, never use inline styling unless necessary,
 
@@ -105,17 +103,17 @@ For more info on CSS shorthand usage visit the following links
 > * http://msfast.myspace.com/
 > * http://www.webpagetest.org/
 
-h1. Javascript Syntax
+# Javascript Syntax
 
 See PHP Syntax Below. The languages are similar enough that the same rules apply in most cases.
 
-h2. Request Vars
+# Request Vars
 
 Although our php setup have register_globals enabled, PHP6 will remove this option. Therefore, in new code, we should always use the super globals $_GET, $_POST, and $_COOKIE. $_REQUEST should be used only when it is known for sure that a variable could be supplied using multiple methods.
 
-h1. PHP Syntax
+# PHP Syntax
 
-h2. PHP & HTML
+## PHP & HTML
 
 Do not echo HTML using PHP but rather echo the variable/data where it will display.
 
@@ -131,7 +129,7 @@ Example PHP/HTML Mix
 
 </pre>
 
-h2. Control Structures
+## Control Structures
 
 These include if, for, while, switch, etc.
 
@@ -169,7 +167,7 @@ switch (condition) {
 
 </pre>
 
-h2. Function Calls
+## Function Calls
 
 Functions should be called with no spaces between the function name, the opening parenthesis, and the first parameter; spaces between commas and each parameter, and no space between the last parameter, the closing parenthesis, and the semicolon.
 
@@ -186,7 +184,7 @@ $short         = foo($bar);
 $long_variable = foo($baz);
 </pre>
 
-h2. Function Definitions
+## Function Definitions
 
 Function declarations are similar to function calls with the beginning brace on the same line as the function declaration.
 
@@ -221,18 +219,18 @@ function connect(&$dsn, $persistent = false) {
 }
 </pre>
 
-h2. Comments
+## Comments
 
 Complete inline documentation comment blocks (docblocks) must be provided. Please use the header standards in the knowledgebase. These will be used for automatic documentation so for more information visit phpDocumentor [[http://www.phpdoc.org/]].
 
 Non-documentation comments are strongly encouraged. A general rule of thumb is that if you look at a section of code and think "Wow, I don't want to try and describe that", you need to comment it before you forget how it works.
 C style comments (/* */) and standard C++ comments (//) are both fine. The use of Perl / shell style comments (#) is strongly discouraged.
 
-h2. PHP Code Tags
+## PHP Code Tags
 
 Always use <?php ?> to delimit PHP code, not the <? ?> shorthand. This is the most portable way to include PHP code on different operating systems and server setups.
 
-h2. Header Comment Blocks
+## Header Comment Blocks
 
 All source code files shall contain a "page-level" docblock at the top of each file and a "class-level" docblock immediately above each class or function.
 
@@ -288,36 +286,36 @@ class Foo
 ?>
 </pre>
 
-h2. Required Tags That Have Variable Content
+## Required Tags That Have Variable Content
 
-h3. Short Descriptions
+### Short Descriptions
 
 Short descriptions must be provided for all docblocks. They should be a quick sentence, not the name of the item. Please read the Coding Standard's Sample File about how to write good descriptions.
 
-h3. @author
+### @author
 
 There's no hard rule to determine when a new code contributor should be added to the list of authors for a given source file. In general, their changes should fall into the "substantial" category (meaning somewhere around 10% to 20% of code changes). Exceptions could be made for rewriting functions or contributing new logic.
 Simple code reorganization or bug fixes would not justify the addition of a new individual to the list of authors.
 
-h3. @since
+### @since
 
 This tag is required when a file or class is added after the package's initial release. Do not use it in an initial release.
 
-h3. @deprecated
+### @deprecated
 
 This tag is required when a file or class is no longer used but has been left in place for backwards compatibility.
 
-h2. Order and Spacing
+## Order and Spacing
 
 To ease long term readability of the source code, the text and tags must conform to the order and spacing provided in the example above. This standard is adopted from the JavaDoc standard.
 
-h2. Example URLs
+## Example URLs
 
 Use example.com, example.org and example.net for all example URLs and email addresses, per RFC 2606.
 
-h2. Naming Conventions
+## Naming Conventions
 
-h3. Classes
+### Classes
 
 Classes should be given descriptive names. Avoid using abbreviations where possible. Class names should always begin with an uppercase letter and use mixed case to separate words.
 
@@ -329,7 +327,7 @@ NetFinger
 HTMLUploadError
 </pre>
 
-h2. Functions, Methods and Variable Names
+## Functions, Methods and Variable Names
 
 Functions, methods and variable names should be named using CamelCase style. If applicable, functions should have the package or library name as a prefix to avoid name collisions. Names should all start with lowercase with each new "word" starting with an upperCase. Some Examples:
 
@@ -351,13 +349,13 @@ _initTree()
 $this->_status
 </pre>
 
-h2. Constants and Global Variables
+## Constants and Global Variables
 
 Constants and global variables should always be all-uppercase, with underscores to separate words. Prefix constant names with the uppercased name of the class/package they are used in. For example, the constants used by a package named DB begin with DB_.
 
 Note: The true, false and null constants are excepted from the all-uppercase rule, and must always be lowercase.
 
-h2. File Formats
+## File Formats
 
 All scripts must:
 
@@ -367,7 +365,7 @@ All scripts must:
 > # Lines must end only with a line feed (LF). Line feeds are represented as ordinal 10, octal 012 and hex 0A. Do not use carriage returns (CR) like Macintosh computers do or the carriage return/line feed combination (CRLF) like Windows computers do.
 > # It is recommended that the last character in the file is a line feed. This means that when the cursor is at the very end of the file, it should be one line below the last line of text. Some utilities, such as diff, will complain if the last character in the file is not a line feed.
 
-h2. Sample File
+## Sample File
 
 Each docblock in the example contains many details about writing Docblock Comments. Following those instructions is important for two reasons. First, when docblocks are easy to read, users and developers can quickly ascertain what your code does.
 
