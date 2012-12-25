@@ -4,15 +4,20 @@ We shall use Sublime Text 2 (ST2) licensed version for all our coding, including
 
 # Indenting and Line Length
 
-Use an indent of one tab (no spaces! ST2 convert a tab to pseudo 4 spaces, check the setting in ST2 file at Preferences->Setting - Default->"tab_size" = 4). It is recommended that you break lines at approximately 80 characters. For a visual guide for this in ST preferences file set "rulers":[80]. However there is no particular standard rule for the best way to break a line; use your judgement. This applies to all file types: PHP, HTML, CSS, Javascript, etc.
+Use an indent of one tab (no spaces! ST2 convert a tab to pseudo 4 spaces, check the setting in ST2 file at Preferences->Setting - Default->"tab_size" = 4).
+
+It is recommended that you break lines at approximately 80 characters. For a visual guide for this in ST preferences file set "rulers":[80]. However there is no particular standard rule for the best way to break a line; use your judgement. This applies to all file types: PHP, HTML, CSS, Javascript, etc.
 
 Indentation rules should be applied in the source file that will be edited by others. The visual appeal of HTML output should not be taken into consideration when writing code that generates HTML.
 
 # HTML Standards
 
-* As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. When multiple browser compatibility is necessity use http://caniuse.com/.
+* As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. 
+
+* When multiple browser compatibility is necessity use http://caniuse.com/.
 
 * To enable HTML5 on older versions of IE use the following code.
+
 ```html
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -24,7 +29,10 @@ Alternatively, can use http://modernizr.com/
 * The DocType on our HTML documents will be HTML5 based <!DOCTYPE html>.This standard should be followed unless we have to comply with other standards for specific purposed, eg: HTML 4.
 
 * All markup should be delivered as UTF-8, as its the most internationalization friendly.
+
+```html
 <meta charset="utf-8">
+```
 
 * Always add a lang attribute on html element, e.g.: <html lang=”en”>
 
@@ -35,7 +43,8 @@ Alternatively, can use http://modernizr.com/
 * Start with a base HTML5 template code generated use http://switchtohtml5.com/ or http://shikiryu.com/html5/. Alternatively for quick start use http://html5boilerplate.com/
 
 * A basic, but semantically correct HTML5 document should look like the following:
-<pre>
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -56,7 +65,7 @@ Alternatively, can use http://modernizr.com/
   </footer>
 </body>
 </html>
-</pre>
+```
 
 * Place an html comment on some closing div tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
 
@@ -76,18 +85,18 @@ Alternatively, can use http://modernizr.com/
 
 To calculated Specificity count the CSS components and expressing them in a form (a,b,c,d).
 
-> * Element, Pseudo Element: d = 1 – (0,0,0,1)
-> * Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
-> * Id: b = 1 – (0,1,0,0)
-> * Inline Style: a = 1 – (1,0,0,0)
+** Element, Pseudo Element: d = 1 – (0,0,0,1)
+** Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
+** Id: b = 1 – (0,1,0,0)
+** Inline Style: a = 1 – (1,0,0,0)
 
 * Always use CSS shorthand, note the TRBL acronym, element are defined, in a clock-wise manner: Top, Right, Bottom, Left. If bottom is undefined, it inherits its value from top, if left is undefined, it inherits its value from right. If only the top value is defined, all sides inherit from that one declaration.
 
 For more info on CSS shorthand usage visit the following links
 
-> * http://qrayg.com/journal/news/css-background-shorthand
-> * http://sonspring.com/journal/css-redundancy
-> * http://dustindiaz.com/css-shorthand
+** http://qrayg.com/journal/news/css-background-shorthand
+** http://sonspring.com/journal/css-redundancy
+** http://dustindiaz.com/css-shorthand
 
 * Use the _px_ unit of measurement to define font size, instead of _em_ because it offers absolute control over text.
 
@@ -97,11 +106,11 @@ For more info on CSS shorthand usage visit the following links
 
 * For mission critical app/site test performance using:
 
-> * http://developer.yahoo.com/yslow/
-> * http://code.google.com/speed/page-speed/
-> * http://stevesouders.com/hammerhead/
-> * http://msfast.myspace.com/
-> * http://www.webpagetest.org/
+** http://developer.yahoo.com/yslow/
+** http://code.google.com/speed/page-speed/
+** http://stevesouders.com/hammerhead/
+** http://msfast.myspace.com/
+** http://www.webpagetest.org/
 
 # Javascript Syntax
 
@@ -119,7 +128,7 @@ Do not echo HTML using PHP but rather echo the variable/data where it will displ
 
 Example PHP/HTML Mix
 
-<pre>
+```php
 <ul>
     <label>Publications</label>
     <?php foreach($publications as $pub) { ?>
@@ -127,7 +136,7 @@ Example PHP/HTML Mix
     <?php } ?>
 </ul>
 
-</pre>
+```
 
 ## Control Structures
 
@@ -135,7 +144,7 @@ These include if, for, while, switch, etc.
 
 Example if statement
 
-<pre>
+```php
 if (condition1 || condition2) {
     action1;
 } else if (condition3 && (condition4 || condition5)) {
@@ -143,7 +152,7 @@ if (condition1 || condition2) {
 } else {
     defaultaction;
 }
-</pre>
+```
 
 Control statements should have one space between the control keyword and opening parenthesis, to distinguish them from function calls.
 
@@ -151,7 +160,7 @@ It is strongly encouraged to always use curly braces even in situations where th
 
 Example switch statement
 
-<pre>
+```
 switch (condition) {
     case 1:
         action1;
@@ -165,7 +174,7 @@ switch (condition) {
         break;
 }
 
-</pre>
+```
 
 ## Function Calls
 
@@ -173,16 +182,16 @@ Functions should be called with no spaces between the function name, the opening
 
 Example function call
 
-<pre>
+```php
 $var = foo($bar, $baz, $quux);
-</pre>
+```
 
 As displayed above, there should be one space on either side of an equals sign used to assign the return value of a function to a variable. In the case of a block of related assignments, more space may be inserted to promote readability:
 
-<pre>
+```php
 $short         = foo($bar);
 $long_variable = foo($baz);
-</pre>
+```
 
 ## Function Definitions
 
@@ -190,20 +199,20 @@ Function declarations are similar to function calls with the beginning brace on 
 
 Example function definition
 
-<pre>
+```php
 function foo_func($arg1, $arg2 = '') {
     if (condition) {
         statement;
     }
     return $val;
 }
-</pre>
+```
 
 Arguments with default values go at the end of the argument list. Always attempt to return a meaningful value from a function if one is appropriate.
 
 Longer function example
 
-<pre>
+```php
 function connect(&$dsn, $persistent = false) {
     if (is_array($dsn)) {
         $dsninfo = &$dsn;
@@ -217,7 +226,7 @@ function connect(&$dsn, $persistent = false) {
 
     return true;
 }
-</pre>
+```
 
 ## Comments
 
@@ -236,8 +245,8 @@ All source code files shall contain a "page-level" docblock at the top of each f
 
 Example docblocks
 
+```php
 <?php
-<pre>
 /**
  * Short description for file
  *
@@ -284,7 +293,7 @@ class Foo
 }
 
 ?>
-</pre>
+```
 
 ## Required Tags That Have Variable Content
 
@@ -321,17 +330,17 @@ Classes should be given descriptive names. Avoid using abbreviations where possi
 
 Examples of good class names are:
 
-<pre>
+```php
 Log
 NetFinger
 HTMLUploadError
-</pre>
+```
 
 ## Functions, Methods and Variable Names
 
 Functions, methods and variable names should be named using CamelCase style. If applicable, functions should have the package or library name as a prefix to avoid name collisions. Names should all start with lowercase with each new "word" starting with an upperCase. Some Examples:
 
-<pre>
+```php
 connect() 
 getData()
 buildSomeWidget()
@@ -339,15 +348,15 @@ buildSomeWidget()
 $i
 $count
 $tempArray
-</pre>
+```
 
 Private class members (meaning class members that are intended to be used only from within the same class in which they are declared are preceded by a single underscore. For example:
 
-<pre>
+```php
 _sort()
 _initTree()
 $this->_status
-</pre>
+```
 
 ## Constants and Global Variables
 
@@ -362,8 +371,8 @@ All scripts must:
 * Be stored as ASCII text
 * Use ISO-8859-1 character encoding
 * Be Unix formatted, which means:
-> # Lines must end only with a line feed (LF). Line feeds are represented as ordinal 10, octal 012 and hex 0A. Do not use carriage returns (CR) like Macintosh computers do or the carriage return/line feed combination (CRLF) like Windows computers do.
-> # It is recommended that the last character in the file is a line feed. This means that when the cursor is at the very end of the file, it should be one line below the last line of text. Some utilities, such as diff, will complain if the last character in the file is not a line feed.
+** Lines must end only with a line feed (LF). Line feeds are represented as ordinal 10, octal 012 and hex 0A. Do not use carriage returns (CR) like Macintosh computers do or the carriage return/line feed combination (CRLF) like Windows computers do.
+** It is recommended that the last character in the file is a line feed. This means that when the cursor is at the very end of the file, it should be one line below the last line of text. Some utilities, such as diff, will complain if the last character in the file is not a line feed.
 
 ## Sample File
 
@@ -371,7 +380,7 @@ Each docblock in the example contains many details about writing Docblock Commen
 
 Please take note of the vertical and horizontal spacing. They are part of the standard.
 
-<pre>
+```php
 <?php
 /**
  * Short description for file
@@ -572,4 +581,4 @@ class NetSample
 }
 
 ?>
-</pre>
+```
