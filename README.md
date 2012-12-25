@@ -12,11 +12,9 @@ Indentation rules should be applied in the source file that will be edited by ot
 
 # HTML Standards
 
-- As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. 
-
-- When multiple browser compatibility is necessity use http://caniuse.com/.
-
-- To enable HTML5 on older versions of IE use the following code.
+* As of September 2012, we will be using HTML5 in all our HTML coding standard, for quick reference use the attached HTML5 cheat sheets. 
+* When multiple browser compatibility is necessity use http://caniuse.com/.
+* To enable HTML5 on older versions of IE use the following code.
 
 ```html
 <!--[if lt IE 9]>
@@ -26,22 +24,17 @@ Indentation rules should be applied in the source file that will be edited by ot
 
 Alternatively, can use http://modernizr.com/
 
-- The DocType on our HTML documents will be HTML5 based <!DOCTYPE html>.This standard should be followed unless we have to comply with other standards for specific purposed, eg: HTML 4.
-
-- All markup should be delivered as UTF-8, as its the most internationalization friendly.
+* The DocType on our HTML documents will be HTML5 based <!DOCTYPE html>.This standard should be followed unless we have to comply with other standards for specific purposed, eg: HTML 4.
+* All markup should be delivered as UTF-8, as its the most internationalization friendly.
 
 ```html
 <meta charset="utf-8">
 ```
 
-- Always add a lang attribute on html element, e.g.: <html lang=”en”>
-
-- Write all HTML5 tags in lowercase.
-
-- Use double quotes for attribute value eg: charset="utf-8".
-
-- Start with a base HTML5 template code generated use http://switchtohtml5.com/ or http://shikiryu.com/html5/. Alternatively for quick start use http://html5boilerplate.com/
-
+* Always add a lang attribute on html element, e.g.: <html lang=”en”>
+* Write all HTML5 tags in lowercase.
+* Use double quotes for attribute value eg: charset="utf-8".
+* Start with a base HTML5 template code generated use http://switchtohtml5.com/ or http://shikiryu.com/html5/. Alternatively for quick start use http://html5boilerplate.com/
 * A basic, but semantically correct HTML5 document should look like the following:
 
 ```html
@@ -67,53 +60,35 @@ Alternatively, can use http://modernizr.com/
 </html>
 ```
 
-- Place an html comment on some closing div tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
-
-- Use microformats[[http://en.wikipedia.org/wiki/Microformat]] and/or Microdata where appropriate, specifically hCard and adr.
-
-- Make use of THEAD, TBODY, and TH tags in tables (and Scope attribute) when appropriate.
+* Place an html comment on some closing div tags to indicate what element you're closing. It will help when there is lots of nesting and indentation.
+* Use microformats[[http://en.wikipedia.org/wiki/Microformat]] and/or Microdata where appropriate, specifically hCard and adr.
+* Make use of THEAD, TBODY, and TH tags in tables (and Scope attribute) when appropriate.
 
 # Styling/CSS Standards
 
-- Place all the styling on a separate stylesheet, never use inline styling unless necessary,
-
-- Only give elements an ID attribute if they are unique. They should be applied to that element only and nothing else. Classes can be applied to multiple elements that share the same style properties. Things that should look and work in the same way can have the same class name.
-
-- Always use spirit for background images, use http://spriteme.org/ (though this requires the codes to be online)
-
-- As the CSS grow give special attention to CSS Specifity: [[http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html]]
-
-To calculated Specificity count the CSS components and expressing them in a form (a,b,c,d).
-
-  + Element, Pseudo Element: d = 1 – (0,0,0,1)
-
-  + Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
-
-  + Id: b = 1 – (0,1,0,0)
-
-  + Inline Style: a = 1 – (1,0,0,0)
-
-- Always use CSS shorthand, note the TRBL acronym, element are defined, in a clock-wise manner: Top, Right, Bottom, Left. If bottom is undefined, it inherits its value from top, if left is undefined, it inherits its value from right. If only the top value is defined, all sides inherit from that one declaration.
-
-For more info on CSS shorthand usage visit the following links
-
- + http://qrayg.com/journal/news/css-background-shorthand
- + http://sonspring.com/journal/css-redundancy
- + http://dustindiaz.com/css-shorthand
-
-- Use the _px_ unit of measurement to define font size, instead of _em_ because it offers absolute control over text.
-
-- Avoid using !important if possible (as it mess up CSS specificity) and only use it as a last resort.
-
-- When CSS minification is in need use https://github.com/barryvan/CSSMin/
-
-- For mission critical app/site test performance using:
-
- + http://developer.yahoo.com/yslow/
- + http://code.google.com/speed/page-speed/
- + http://stevesouders.com/hammerhead/
- + http://msfast.myspace.com/
- + http://www.webpagetest.org/
+* Place all the styling on a separate stylesheet, never use inline styling unless necessary,
+* Only give elements an ID attribute if they are unique. They should be applied to that element only and nothing else. Classes can be applied to multiple elements that share the same style properties. Things that should look and work in the same way can have the same class name.
+* Always use spirit for background images, use http://spriteme.org/ (though this requires the codes to be online)
+* As the CSS grow give special attention to CSS Specifity: [[http://www.stuffandnonsense.co.uk/archives/css_specificity_wars.html]]
+* To calculated Specificity count the CSS components and expressing them in a form (a,b,c,d).
+    * Element, Pseudo Element: d = 1 – (0,0,0,1)
+    * Class, Pseudo class, Attribute: c = 1 – (0,0,1,0)
+    * Id: b = 1 – (0,1,0,0)
+    * Inline Style: a = 1 – (1,0,0,0)
+* Always use CSS shorthand, note the TRBL acronym, element are defined, in a clock-wise manner: Top, Right, Bottom, Left. If bottom is undefined, it inherits its value from top, if left is undefined, it inherits its value from right. If only the top value is defined, all sides inherit from that one declaration.
+* For more info on CSS shorthand usage visit the following links
+    * http://qrayg.com/journal/news/css-background-shorthand
+    * http://sonspring.com/journal/css-redundancy
+    * http://dustindiaz.com/css-shorthand
+* Use the _px_ unit of measurement to define font size, instead of _em_ because it offers absolute control over text.
+* Avoid using !important if possible (as it mess up CSS specificity) and only use it as a last resort.
+* When CSS minification is in need use https://github.com/barryvan/CSSMin/
+* For mission critical app/site test performance using:
+    * http://developer.yahoo.com/yslow/
+    * http://code.google.com/speed/page-speed/
+    * http://stevesouders.com/hammerhead/
+    * http://msfast.myspace.com/
+    * http://www.webpagetest.org/
 
 # Javascript Syntax
 
@@ -374,8 +349,8 @@ All scripts must:
 * Be stored as ASCII text
 * Use ISO-8859-1 character encoding
 * Be Unix formatted, which means:
-** Lines must end only with a line feed (LF). Line feeds are represented as ordinal 10, octal 012 and hex 0A. Do not use carriage returns (CR) like Macintosh computers do or the carriage return/line feed combination (CRLF) like Windows computers do.
-** It is recommended that the last character in the file is a line feed. This means that when the cursor is at the very end of the file, it should be one line below the last line of text. Some utilities, such as diff, will complain if the last character in the file is not a line feed.
+    * Lines must end only with a line feed (LF). Line feeds are represented as ordinal 10, octal 012 and hex 0A. Do not use carriage returns (CR) like Macintosh computers do or the carriage return/line feed combination (CRLF) like Windows computers do.
+    * It is recommended that the last character in the file is a line feed. This means that when the cursor is at the very end of the file, it should be one line below the last line of text. Some utilities, such as diff, will complain if the last character in the file is not a line feed.
 
 ## Sample File
 
