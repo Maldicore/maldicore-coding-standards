@@ -1,8 +1,10 @@
-h1. IDE
+IDE
+===
 
 We shall use Sublime Text 2 (ST2) licensed version for all our coding, including customization specified in this document and elsewhere in the Maldicore knowledge-base.
 
-h1. Indenting and Line Length
+Indenting and Line Length
+-------------------------
 
 Use an indent of one tab (no spaces! ST2 convert a tab to pseudo 4 spaces, check the setting in ST2 file at Preferences->Setting - Default->"tab_size" = 4). It is recommended that you break lines at approximately 80 characters. For a visual guide for this in ST preferences file set "rulers":[80]. However there is no particular standard rule for the best way to break a line; use your judgement. This applies to all file types: PHP, HTML, CSS, Javascript, etc.
 
