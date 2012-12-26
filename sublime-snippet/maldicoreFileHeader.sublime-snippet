@@ -9,23 +9,23 @@
      * 
      * Controller used by ${2:Application Name} for ${3:Module/Package Name}.
      *
-     * PHP 5 / CakePHP 2.3
+     * PHP 5 / ${4:Framework Name}
      *
-     * ${2:Application Name} (http://${4:URL})
+     * ${2:Application Name} (http://${5:URL})
      * Copyright 2012, Maldicore Group Pvt Ltd. (http://maldicore.com)
      *
      * Licensed Private
      * Redistributions prohibited.
      *
      * @copyright     Copyright 2012, Maldicore Group Pvt Ltd. (http://maldicore.com)
-     * @link          http://${4:URL} | ${2:Application Name} Project
+     * @link          http://${5:URL} | ${2:Application Name} Project
      * @package       ${3:Module/Package Name}
-     * @since         ${2:Application Name} v${5:Version Number}
+     * @since         ${2:Application Name} v${6:Version Number}
      * @license       Private (redistribution prohibited)
      * @author        Yusuf Abdulla Shunan (shunan@maldicore.com)
      */
 
-    ${6:# code}
+    ${7:# code}
 ?>
 ]]>
 </content>
