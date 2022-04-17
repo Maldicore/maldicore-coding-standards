@@ -86,9 +86,8 @@ Alternatively, can use http://modernizr.com/
 * For mission critical app/site test performance using:
     * http://developer.yahoo.com/yslow/
     * http://code.google.com/speed/page-speed/
-    * http://stevesouders.com/hammerhead/
-    * http://msfast.myspace.com/
     * http://www.webpagetest.org/
+    * https://gtmetrix.com/
 
 # Javascript Syntax
 
