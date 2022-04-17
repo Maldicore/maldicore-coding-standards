@@ -1,6 +1,6 @@
 # IDE
 
-We shall use Sublime Text 2 (ST2) licensed version for all our coding, including customization specified in this document and elsewhere in the Maldicore knowledge-base.
+We shall use VSCode / Sublime Text 3 (licensed version) for all our coding, including customization specified in this document and elsewhere in the Maldicore knowledge-base.
 
 # Indenting and Line Length
 
